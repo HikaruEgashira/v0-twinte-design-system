@@ -21,11 +21,12 @@ export default function Home() {
       <div className="mb-8">
         <div className="space-y-2">
           <h1 className="font-bold text-3xl tracking-tight md:text-4xl">
-            Registry
+            Twin:te Design System
           </h1>
           <p className="text-muted-foreground">
-            Distribute your design system tokens, custom components, hooks,
-            pages, and other files to any React project.
+            Twin:te エコシステムで共有されるニューモーフィックデザインシステムの
+            コンポーネントレジストリです。v0.dev や shadcn CLI
+            から利用できます。
           </p>
         </div>
       </div>
@@ -156,30 +157,23 @@ export default function Home() {
         <div className="flex flex-col gap-2">
           <h2 className="font-semibold text-xl">About</h2>
           <p className="text-muted-foreground">
-            This registry serves as a central repository for all UI components
-            and blocks used in your applications. It helps maintain consistency
-            across your products and speeds up development by providing
-            ready-to-use components. Each component and block is documented with
-            examples. You can browse components by category, search for specific
-            components, and view examples of how they are used in different
-            contexts.
+            Twin:te Design System は、筑波大学の時間割管理アプリ
+            <a href="https://app.twinte.net" className="underline">
+              Twin:te
+            </a>
+            エコシステムで共有されるニューモーフィックデザインシステムの
+            コンポーネントレジストリです。Core UI (21個)、Composite (12個)、
+            Landing Page ブロック (7個) の計40個のコンポーネントを提供します。
           </p>
           <p className="mt-2 text-muted-foreground">
-            To get begin, start with a block{" "}
-            <span className="italic">
-              (like the{" "}
-              <a href="/registry/blank" className="underline">
-                blank block
-              </a>
-              )
-            </span>{" "}
-            and click the <span className="font-bold">Open in v0</span> button.
-            You can also open individual UI primitives or components in v0 if
-            you want a smaller or more specific starting point.
+            各コンポーネントの <span className="font-bold">Open in v0</span>{" "}
+            ボタンから v0.dev で利用できます。CLI でのインストールは{" "}
+            <code className="inline text-sm">npx shadcn@latest add</code>{" "}
+            コマンドを使用してください。
           </p>
 
           <p className="mt-4 text-[#1B1F23] dark:text-white">
-            <a href="https://github.com/vercel/registry-starter">
+            <a href="https://github.com/HikaruEgashira/v0-twinte-design-system">
               <svg
                 viewBox="0 0 1024 1024"
                 xmlns="http://www.w3.org/2000/svg"
