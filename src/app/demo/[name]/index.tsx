@@ -76,7 +76,6 @@ export const demos: { [name: string]: Demo } = {
   blank,
   store,
   dashboard,
-
   // components
   hero,
   login,

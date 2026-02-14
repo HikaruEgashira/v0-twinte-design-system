@@ -20,7 +20,7 @@ function Card({
     <div
       ref={ref}
       className={cn(
-        "h-auto rounded-xl bg-[image:var(--gradient-base)] px-6 py-4 shadow-neu-base",
+        "h-auto rounded-xl border border-background bg-[image:var(--gradient-base)] px-6 py-4 shadow-neu-base",
         className,
       )}
       style={{ width, ...style }}

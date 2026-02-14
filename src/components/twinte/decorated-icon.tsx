@@ -13,7 +13,7 @@ function DecoratedIcon({ className, icon, ref, ...props }: DecoratedIconProps) {
     <div
       ref={ref}
       className={cn(
-        "flex h-16 w-16 items-center justify-center rounded-full bg-accent shadow-neu-concave",
+        "flex h-[4rem] w-[4rem] items-center justify-center rounded-full bg-[image:var(--gradient-primary-light)] shadow-[var(--shadow-neu-liner-concave)]",
         className,
       )}
       {...props}

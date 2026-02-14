@@ -25,8 +25,8 @@ function ToggleButton({
   return (
     <div
       className={cn(
-        "relative flex h-7 w-48 items-center rounded-full border border-background px-[0.1875rem]",
-        "cursor-pointer select-none bg-background text-center font-medium text-muted-foreground text-sm shadow-[var(--shadow-neu-input),var(--shadow-neu-convex)]",
+        "relative flex h-[2.8rem] w-[12rem] items-center rounded-full border border-background px-[0.1rem]",
+        "cursor-pointer select-none bg-background text-center font-medium text-muted-foreground text-xs shadow-[var(--shadow-neu-concave),var(--shadow-neu-convex)]",
         disabled && "pointer-events-none opacity-50",
         className,
       )}
@@ -47,8 +47,8 @@ function ToggleButton({
       </button>
       <div
         className={cn(
-          "absolute left-[0.0625rem] h-6 w-24 rounded-full shadow-md",
-          "bg-[image:var(--gradient-primary)] text-center text-white leading-6 transition-transform",
+          "absolute left-[0.1rem] h-[2.4rem] w-[6rem] rounded-full shadow-neu-drop",
+          "bg-[image:var(--gradient-primary-button)] text-center text-white text-xs leading-[2.4rem] transition-transform",
           !isLeft && "translate-x-[5.6rem]",
         )}
       >

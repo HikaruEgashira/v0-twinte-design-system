@@ -27,9 +27,9 @@ function Checkbox({
       disabled={disabled}
       onCheckedChange={onCheckedChange}
       className={cn(
-        "flex h-[2.6rem] w-[2.6rem] cursor-pointer items-center justify-center rounded-md transition-shadow",
+        "flex h-[2.4rem] w-[2.4rem] cursor-pointer items-center justify-center rounded-lg transition-shadow",
         !checked &&
-          "bg-background text-muted-foreground shadow-neu-convex hover:shadow-neu-base",
+          "bg-background text-muted-foreground shadow-neu-convex hover:shadow-neu-convex-hover",
         checked &&
           "bg-[image:var(--gradient-primary)] text-white shadow-neu-primary-concave",
         disabled && "pointer-events-none opacity-50",

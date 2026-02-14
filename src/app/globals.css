@@ -50,28 +50,32 @@
 
   --radius: 0.8rem;
 
-  /* Twin:te Neumorphic Shadows - Light */
+  /* Twin:te Neumorphic Shadows - Light (exact match to neumorphic-components-set) */
   --shadow-neu-base:
-    0.2rem 0.4rem 1rem oklch(0.7 0.02 230 / 0.45),
-    -0.1rem -0.1rem 0.2rem oklch(1.0 0 0 / 0.97),
-    inset -0.6rem -0.8rem 1.2rem oklch(1.0 0 0 / 0.45),
-    inset 0.2rem 0.3rem 0.4rem oklch(0.8 0.015 230 / 0.24);
-  --shadow-neu-convex: 0.2rem 0.3rem 0.8rem oklch(0.7 0.02 230 / 0.55), -0.2rem
-    -0.3rem 1rem oklch(1.0 0 0 / 0.6);
-  --shadow-neu-concave: inset 0.2rem 0.3rem 0.8rem oklch(0.8 0.015 230 / 0.24),
-    inset -0.2rem -0.4rem 0.8rem oklch(1.0 0 0 / 0.45);
-  --shadow-neu-input: inset 0.1rem 0.1rem 0.4rem oklch(0.72 0.02 230 / 0.64),
-    inset -0.2rem -0.2rem 0.3rem oklch(1.0 0 0 / 1.0);
-  --shadow-neu-icon: 0.1rem 0.3rem 0.3rem oklch(0.55 0.08 194.8 / 0.25), -0.1rem
-    -0.1rem 0.2rem oklch(1.0 0 0 / 0.2);
-  --shadow-neu-primary-concave: inset 0.3rem 0.3rem 0.6rem
-    oklch(0.55 0.1 194.8 / 0.84);
-  --shadow-neu-danger-concave: inset 0.3rem 0.3rem 0.4rem
-    oklch(0.55 0.15 13.0 / 0.6);
+    0.2rem 0.4rem 1rem #a5bac766,
+    -0.1rem -0.1rem 0.2rem #ffffffb3,
+    inset -0.6rem -0.8rem 1.2rem #ffffff73,
+    inset 0.2rem 0.3rem 0.4rem #cbd5df66;
+  --shadow-neu-convex: 0.2rem 0.3rem 0.8rem #a5bac78c, -0.5rem -0.5rem 1rem #ffffff99;
+  --shadow-neu-convex-hover: 0.1rem 0.2rem 0.4rem #a5bac78c, -0.3rem -0.3rem 0.5rem #ffffff99;
+  --shadow-neu-concave: inset 0.1rem 0.2rem 0.4rem #a5bac773,
+    inset -0.2rem -0.2rem 0.3rem #ffffffcc;
+  --shadow-neu-input: inset 0.1rem 0.2rem 0.4rem #a5bac773,
+    inset -0.2rem -0.2rem 0.3rem #ffffffcc;
+  --shadow-neu-drop: 0.2rem 0.2rem 0.3rem #a1a7aa99;
+  --shadow-neu-liner-concave: inset 0.1rem 0.2rem 0.2rem #86e1dc40;
+  --shadow-neu-icon: 0.1rem 0.3rem 0.3rem #43afb640, -0.1rem -0.1rem 0.2rem #ffffff33;
+  --shadow-neu-primary-concave: inset 0.2rem 0.3rem 0.4rem #55b3c099;
+  --shadow-neu-danger-concave: inset 0.1rem 0.2rem 0.3rem #c0545999;
+  --shadow-neu-unselected-concave:
+    inset 0.2rem 0.3rem 0.4rem hsla(203, 12%, 60%, 0.45),
+    inset -0.2rem -0.2rem 0.3rem #ffffff59;
 
   /* Twin:te Gradients */
-  --gradient-base: linear-gradient(158.17deg, #f3f5fa -1.94%, #e5e7ed 102.24%);
+  --gradient-base: linear-gradient(158.17deg, #f3f5fa -1.94%, #ebedf2 102.24%);
   --gradient-primary: linear-gradient(91.58deg, #6bcedc -8.01%, #71e2dc 105.39%);
+  --gradient-primary-light: linear-gradient(180deg, #dbf2f3 0%, #d2f3f3 100%);
+  --gradient-primary-button: linear-gradient(119.06deg, #3fdfd6 10.71%, #44d8e1 60.37%, #46dfd6 103.14%);
 }
 
 .dark {
@@ -200,6 +204,10 @@
   --shadow-neu-icon: var(--shadow-neu-icon);
   --shadow-neu-primary-concave: var(--shadow-neu-primary-concave);
   --shadow-neu-danger-concave: var(--shadow-neu-danger-concave);
+  --shadow-neu-convex-hover: var(--shadow-neu-convex-hover);
+  --shadow-neu-drop: var(--shadow-neu-drop);
+  --shadow-neu-liner-concave: var(--shadow-neu-liner-concave);
+  --shadow-neu-unselected-concave: var(--shadow-neu-unselected-concave);
 
   --shadow-2xs: var(--shadow-2xs);
   --shadow-xs: var(--shadow-xs);

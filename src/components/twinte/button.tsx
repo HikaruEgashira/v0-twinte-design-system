@@ -5,7 +5,7 @@ import { type VariantProps, cva } from "class-variance-authority";
 import * as React from "react";
 
 const buttonVariants = cva(
-  "inline-flex items-center justify-center relative rounded-lg transition-shadow outline-none cursor-pointer select-none",
+  "inline-flex items-center justify-center relative rounded-full transition-shadow outline-none cursor-pointer select-none",
   {
     variants: {
       size: {
@@ -75,14 +75,14 @@ function Button({
       ref={ref}
       className={cn(
         buttonVariants({ size, color, layout }),
-        active && !disabled && "text-white shadow-neu-primary-concave",
+        active && !disabled && "bg-[image:var(--gradient-primary-button)] text-white shadow-neu-primary-concave",
         active &&
           !disabled &&
           color === "danger" &&
           "shadow-neu-danger-concave",
         disabled && "pointer-events-none opacity-30 shadow-neu-convex",
         !disabled &&
-          "hover:shadow-neu-base active:text-white active:shadow-neu-primary-concave",
+          "hover:shadow-neu-convex-hover active:text-white active:shadow-neu-primary-concave",
         !disabled && color === "danger" && "active:shadow-neu-danger-concave",
         className,
       )}

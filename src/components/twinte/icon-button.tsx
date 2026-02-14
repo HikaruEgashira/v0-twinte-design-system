@@ -6,21 +6,21 @@ import type * as React from "react";
 import { Loader } from "./loader";
 
 const iconButtonVariants = cva(
-  "inline-flex items-center justify-center rounded-full bg-[image:var(--gradient-base)] cursor-pointer select-none outline-none transition-shadow shadow-neu-convex",
+  "inline-flex items-center justify-center rounded-full bg-background cursor-pointer select-none outline-none transition-shadow shadow-neu-convex",
   {
     variants: {
       size: {
-        small: "w-[2.8rem] h-[2.8rem] text-[1.6rem]",
+        small: "w-[2.6rem] h-[2.6rem] text-[1.6rem]",
         medium: "w-[3.3rem] h-[3.3rem] text-[1.8rem]",
-        large: "w-16 h-16 text-[2.4rem]",
+        large: "w-[4rem] h-[4rem] text-[2.4rem]",
       },
       color: {
         normal:
-          "text-muted-foreground hover:shadow-neu-base active:text-white active:shadow-neu-primary-concave",
+          "text-muted-foreground hover:shadow-neu-convex-hover active:text-white active:shadow-neu-primary-concave",
         danger:
-          "text-destructive hover:shadow-neu-base active:text-white active:shadow-neu-danger-concave",
+          "text-destructive hover:shadow-neu-convex-hover active:text-white active:shadow-neu-danger-concave",
         primary:
-          "text-primary hover:shadow-neu-base active:text-white active:shadow-neu-primary-concave",
+          "text-primary hover:shadow-neu-convex-hover active:text-white active:shadow-neu-primary-concave",
       },
     },
     defaultVariants: {

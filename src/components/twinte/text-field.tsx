@@ -8,8 +8,8 @@ import type * as React from "react";
 const textFieldVariants = cva("flex items-center gap-2", {
   variants: {
     size: {
-      normal: "h-16",
-      slim: "h-[3.4rem]",
+      normal: "h-[4rem]",
+      slim: "h-[3.6rem]",
     },
   },
   defaultVariants: {

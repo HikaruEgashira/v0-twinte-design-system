@@ -18,7 +18,7 @@ function Textarea({ className, style, ...props }: TextareaProps) {
     >
       <textarea
         className="w-full resize-none bg-transparent text-foreground text-sm leading-relaxed outline-none placeholder:text-muted-foreground"
-        style={{ width: "100%", height: "10rem", ...style }}
+        style={{ width: "100%", height: "9.2rem", ...style }}
         {...props}
       />
     </div>
