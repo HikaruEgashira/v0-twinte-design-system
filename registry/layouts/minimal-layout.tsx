@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono, Montserrat } from "next/font/google";
-import React, { type ReactNode } from "react";
+import { type ReactNode } from "react";
 
 import { cn } from "@/lib/utils";
 

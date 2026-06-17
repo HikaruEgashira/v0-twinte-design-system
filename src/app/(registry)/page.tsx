@@ -180,6 +180,7 @@ export default function Home() {
                 role="graphics-symbol"
                 className="mr-1 inline size-4 fill-[#1B1F23] dark:fill-white"
               >
+                <title>GitHub</title>
                 <path
                   fillRule="evenodd"
                   clipRule="evenodd"
