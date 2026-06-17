@@ -1,9 +1,9 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { type VariantProps, cva } from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
 import { X } from "lucide-react";
 import type * as React from "react";
+import { cn } from "@/lib/utils";
 
 const textFieldVariants = cva("flex items-center gap-2", {
   variants: {
@@ -74,5 +74,5 @@ function TextField({
   );
 }
 
-export { TextField, textFieldVariants };
 export type { TextFieldProps };
+export { TextField, textFieldVariants };

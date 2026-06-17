@@ -1,8 +1,8 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { type VariantProps, cva } from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
 import * as React from "react";
+import { cn } from "@/lib/utils";
 
 const buttonVariants = cva(
   "inline-flex items-center justify-center relative rounded-full transition-shadow outline-none cursor-pointer select-none",
@@ -75,7 +75,9 @@ function Button({
       ref={ref}
       className={cn(
         buttonVariants({ size, color, layout }),
-        active && !disabled && "bg-[image:var(--gradient-primary-button)] text-white shadow-neu-primary-concave",
+        active &&
+          !disabled &&
+          "bg-[image:var(--gradient-primary-button)] text-white shadow-neu-primary-concave",
         active &&
           !disabled &&
           color === "danger" &&
@@ -96,5 +98,5 @@ function Button({
   );
 }
 
-export { Button, buttonVariants };
 export type { ButtonProps, ButtonState };
+export { Button, buttonVariants };

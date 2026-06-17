@@ -1,7 +1,7 @@
 import {
   Cloud,
   CreditCard,
-  Github,
+  GitBranch,
   Keyboard,
   LifeBuoy,
   LogOut,
@@ -99,7 +99,7 @@ export const dropdownMenu = {
           </DropdownMenuSub>
           <DropdownMenuSeparator />
           <DropdownMenuItem>
-            <Github />
+            <GitBranch />
             <span>GitHub</span>
           </DropdownMenuItem>
           <DropdownMenuItem>

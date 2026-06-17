@@ -1,22 +1,30 @@
 {
-  "$schema": "https://biomejs.dev/schemas/1.8.2/schema.json",
-  "organizeImports": { "enabled": true },
+  "$schema": "https://biomejs.dev/schemas/2.5.0/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": "on"
+      }
+    }
+  },
   "files": {
-    "ignore": [
-      "node_modules",
-      "playwright-report",
-      ".next",
-      ".vercel",
-      ".idea",
-      "public/r",
-      "components/ui",
-      "src/app/demo"
+    "includes": [
+      "**",
+      "!node_modules",
+      "!playwright-report",
+      "!.next",
+      "!.vercel",
+      "!.idea",
+      "!public/r",
+      "!components/ui",
+      "!src/components/ui",
+      "!src/app/demo"
     ]
   },
   "linter": {
     "enabled": true,
     "rules": {
-      "recommended": true,
+      "preset": "recommended",
       "nursery": {
         "useSortedClasses": "warn"
       }
@@ -26,6 +34,13 @@
     "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2
+  },
+  "css": {
+    "parser": {
+      "cssModules": false,
+      "allowWrongLineComments": false,
+      "tailwindDirectives": true
+    }
   },
   "javascript": {
     "formatter": {

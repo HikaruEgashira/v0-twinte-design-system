@@ -9,7 +9,7 @@ export const resizable = {
   components: {
     Default: (
       <ResizablePanelGroup
-        direction="horizontal"
+        orientation="horizontal"
         className="min-h-[200px] max-w-md rounded-lg border"
       >
         <ResizablePanel defaultSize={50}>

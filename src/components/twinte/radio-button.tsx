@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import * as React from "react";
 
 interface RadioButtonOption {
   value: string;
@@ -60,7 +59,7 @@ function RadioButton({
                 )}
               />
             </span>
-            <span className="text-[1.4rem] font-medium leading-[135%] text-foreground">
+            <span className="font-medium text-[1.4rem] text-foreground leading-[135%]">
               {option.label}
             </span>
           </label>
@@ -70,5 +69,5 @@ function RadioButton({
   );
 }
 
+export type { RadioButtonOption, RadioButtonProps };
 export { RadioButton };
-export type { RadioButtonProps, RadioButtonOption };

@@ -1,12 +1,11 @@
 "use client";
 
-import { Logo } from "@/components/logo";
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
 import * as React from "react";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
+import { Logo } from "@/components/logo";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -40,7 +39,7 @@ function LoginForm() {
     },
   });
 
-  async function onSubmit(values: z.infer<typeof formSchema>) {
+  async function onSubmit(_values: z.infer<typeof formSchema>) {
     setIsLoading(true);
   }
 

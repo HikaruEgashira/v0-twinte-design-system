@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import type * as React from "react";
+import { cn } from "@/lib/utils";
 
 interface DecoratedIconProps extends React.HTMLAttributes<HTMLDivElement> {
   icon: React.ReactNode;
@@ -25,5 +25,5 @@ function DecoratedIcon({ className, icon, ref, ...props }: DecoratedIconProps) {
   );
 }
 
-export { DecoratedIcon };
 export type { DecoratedIconProps };
+export { DecoratedIcon };

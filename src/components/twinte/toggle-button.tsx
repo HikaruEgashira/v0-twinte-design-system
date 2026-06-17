@@ -1,7 +1,6 @@
 "use client";
 
 import { cn } from "@/lib/utils";
-import * as React from "react";
 
 type ToggleSelect = "left" | "right";
 
@@ -58,5 +57,5 @@ function ToggleButton({
   );
 }
 
-export { ToggleButton };
 export type { ToggleButtonProps, ToggleSelect };
+export { ToggleButton };

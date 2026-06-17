@@ -1,8 +1,8 @@
 "use client";
 
-import { cn } from "@/lib/utils";
-import { type VariantProps, cva } from "class-variance-authority";
+import { cva, type VariantProps } from "class-variance-authority";
 import type * as React from "react";
+import { cn } from "@/lib/utils";
 
 const labelVariants = cva("flex items-center h-8 leading-none", {
   variants: {
@@ -48,5 +48,5 @@ function Label({
   );
 }
 
-export { Label, labelVariants };
 export type { LabelProps };
+export { Label, labelVariants };
