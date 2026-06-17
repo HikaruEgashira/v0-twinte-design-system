@@ -50,6 +50,7 @@ function Slider({
         />
       </SliderPrimitive.Track>
       {Array.from({ length: _values.length }, (_, index) => (
+        // biome-ignore lint/suspicious/noArrayIndexKey: thumb identity is its position
         <SliderPrimitive.Thumb
           data-slot="slider-thumb"
           key={index}
