@@ -1,8 +1,8 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import { Switch } from "radix-ui";
 import type * as React from "react";
+import { cn } from "@/lib/utils";
 
 interface ToggleSwitchProps {
   checked?: boolean;
@@ -46,5 +46,5 @@ function ToggleSwitch({
   );
 }
 
-export { ToggleSwitch };
 export type { ToggleSwitchProps };
+export { ToggleSwitch };

@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import * as React from "react";
+import { cn } from "@/lib/utils";
 
 interface LoaderProps extends React.HTMLAttributes<HTMLDivElement> {
   size?: number;
@@ -92,5 +92,5 @@ function generateBoxShadow(
     .join(", ");
 }
 
-export { Loader };
 export type { LoaderProps };
+export { Loader };

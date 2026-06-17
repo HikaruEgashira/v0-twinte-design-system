@@ -17,6 +17,7 @@
       "!.idea",
       "!public/r",
       "!components/ui",
+      "!src/components/ui",
       "!src/app/demo"
     ]
   },
@@ -33,6 +34,13 @@
     "enabled": true,
     "indentStyle": "space",
     "indentWidth": 2
+  },
+  "css": {
+    "parser": {
+      "cssModules": false,
+      "allowWrongLineComments": false,
+      "tailwindDirectives": true
+    }
   },
   "javascript": {
     "formatter": {

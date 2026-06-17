@@ -1,7 +1,7 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import type * as React from "react";
+import { cn } from "@/lib/utils";
 
 interface TextareaProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {
@@ -25,5 +25,5 @@ function Textarea({ className, style, ...props }: TextareaProps) {
   );
 }
 
-export { Textarea };
 export type { TextareaProps };
+export { Textarea };

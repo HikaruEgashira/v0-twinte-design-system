@@ -1,9 +1,9 @@
 "use client";
 
-import { cn } from "@/lib/utils";
 import { Check } from "lucide-react";
 import { Checkbox as RadixCheckbox } from "radix-ui";
 import type * as React from "react";
+import { cn } from "@/lib/utils";
 
 interface CheckboxProps {
   checked?: boolean;
@@ -43,5 +43,5 @@ function Checkbox({
   );
 }
 
-export { Checkbox };
 export type { CheckboxProps };
+export { Checkbox };
