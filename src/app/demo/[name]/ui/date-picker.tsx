@@ -31,7 +31,7 @@ export const datePicker = {
           </Button>
         </PopoverTrigger>
         <PopoverContent className="w-auto p-0">
-          <Calendar mode="single" initialFocus />
+          <Calendar mode="single" autoFocus />
         </PopoverContent>
       </Popover>
     ),
