@@ -254,7 +254,7 @@ export function AreaChartComponent() {
               stroke="var(--color-desktop)"
               stackId="a"
             />
-            <ChartLegend content={<ChartLegendContent />} />
+            <ChartLegend content={(props) => <ChartLegendContent {...props} />} />
           </AreaChart>
         </ChartContainer>
       </CardContent>
